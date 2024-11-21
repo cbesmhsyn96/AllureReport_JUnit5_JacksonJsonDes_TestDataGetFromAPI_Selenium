@@ -1,0 +1,4 @@
+"DESCRİPTİON","DURATİON İN MS","NAME","PARENT SUİTE","START TİME","STATUS","STOP TİME","SUB SUİTE","SUİTE","TEST CLASS","TEST METHOD"
+"","1","test3()","","Thu Nov 21 15:14:24 GMT+03:00 2024","passed","Thu Nov 21 15:14:24 GMT+03:00 2024","","tests.Tests","tests.Tests","test3"
+"","23","test1()","","Thu Nov 21 15:14:24 GMT+03:00 2024","failed","Thu Nov 21 15:14:24 GMT+03:00 2024","","tests.Tests","tests.Tests","test1"
+"","2","test2()","","Thu Nov 21 15:14:24 GMT+03:00 2024","failed","Thu Nov 21 15:14:24 GMT+03:00 2024","","tests.Tests","tests.Tests","test2"
