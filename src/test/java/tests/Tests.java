@@ -1,20 +1,21 @@
 package tests;
 
+import base.Base;
 import io.qameta.allure.Step;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import utils.SeleniumHelperClass;
 
-public class Tests {
+
+public class Tests extends SeleniumHelperClass {
     @Test
-    void testAuthentication() {
+    void goUrlTest() {
         step1();
-        step2();
     }
 
     @Step("Step 1")
     void step1() {
-        subStep1();
-        subStep2();
+        gotoUrl("");
     }
 
     @Step("Sub-step 1")
