@@ -1,35 +1,33 @@
 package tests;
 
-import base.Base;
 import io.qameta.allure.Step;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import utils.ScreenshotOnFailureExtension;
 import utils.SeleniumHelperClass;
 
-
-public class Tests extends SeleniumHelperClass {
+@ExtendWith(ScreenshotOnFailureExtension.class)
+public class Tests extends SeleniumHelperClass{
     @Test
     void goUrlTest() {
-        step1();
+        goToUrl("https://www.hakcanswtest.com");
+        scrollToCM();
+        assertEquall();
     }
 
-    @Step("Step 1")
-    void step1() {
-        gotoUrl("");
+    @Step("Go to hakcan sw test com")
+    void goToUrl(String url) {
+        gotoUrl(url);
     }
 
-    @Step("Sub-step 1")
-    void subStep1() {
-        Assertions.assertEquals(2,2);
+    @Step("Scroll Contact Me section step")
+    void scrollToCM() {
+        scrollToExistElement();
     }
 
-    @Step("Sub-step 2")
-    void subStep2() {
-        Assertions.assertFalse(false);
+    @Step("Assert equals Contact Me step")
+    void assertEquall() {
+        assertEqualByContextOnElement("Contace");
     }
 
-    @Step("Step 2")
-    void step2() {
-        Assertions.assertFalse(false);
-    }
 }
