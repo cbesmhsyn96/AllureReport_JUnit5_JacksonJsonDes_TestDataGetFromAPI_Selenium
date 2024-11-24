@@ -16,8 +16,8 @@ import java.io.IOException;
 import static utils.AllureScreenshot.attachScreenshot;
 
 public class Base{
-    protected static WebDriver driver;
-    protected static WebDriverWait wait;
+    public static WebDriver driver;
+    public static WebDriverWait wait;
     protected static ChromeOptions options;
 
     @BeforeEach
