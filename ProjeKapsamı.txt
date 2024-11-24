@@ -1,0 +1,15 @@
+AllureReport_JUnit5_JacksonJsonDes_TestDataGetFromAPI_Selenium projesinde;
+--> Web UI test metotları için Selenium,
+--> Locator dosyasından locator value su okuması ve işlemesi için Jackson deserialization,
+--> Test yazma için araç olarak JUnit5,
+--> Raporlamada detaylı bilgiler içeren bir arayüz sunan Allure report,
+--> Testlerin gerçekleştirileceği tarayıcı olarak Chrome Driver kullanılmıştır.
+
+Projede test yazmada yaygın, okunabilirliği arttıran ve sonradan bakım yapıldığında kolaylık sağlayan,
+testleri sayfalara bölme modeli olan Page Object Model (POM) kullanılacak şekilde bir web sitesi seçilip login
+ve sigup sayfalarının testleri yazılacaktır.
+
+Test datası bir API' den çekilip response ta gerekli manipulasyon yapıldıktan sonra testlerin kullanabileceği
+hale getirilecektir.
+
+Takipte kalın...
