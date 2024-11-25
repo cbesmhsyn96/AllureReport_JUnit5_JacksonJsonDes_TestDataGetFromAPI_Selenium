@@ -12,4 +12,6 @@ ve sigup sayfalarının testleri yazılacaktır.
 Test datası bir API' den çekilip response ta gerekli manipulasyon yapıldıktan sonra testlerin kullanabileceği
 hale getirilecektir.
 
+Kullanılacak api --> https://jsonplaceholder.typicode.com/posts GET request
+
 Takipte kalın...
