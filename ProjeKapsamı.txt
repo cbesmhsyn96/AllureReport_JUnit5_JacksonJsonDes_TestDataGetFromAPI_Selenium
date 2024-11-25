@@ -8,7 +8,7 @@ AllureReport_JUnit5_JacksonJsonDes_TestDataGetFromAPI_Selenium projesinde;
 --> Test data kaynağı belirli bir endpointe get isteği atılıp ve dönen response manipule edilerek sağlanmıştır.
 
 Projede test yazmada yaygın, okunabilirliği arttıran ve sonradan bakım yapıldığında kolaylık sağlayan,
-testleri sayfalara bölme modeli olan Page Object Model (POM) kullanılacak şekilde bir web sitesi seçilip login
+testleri sayfalara bölme modeli olan Page Object Model (POM) kullanılacak şekilde, bir web sitesi seçilip login
 ve sigup sayfalarının testleri yazılacaktır.
 
 
