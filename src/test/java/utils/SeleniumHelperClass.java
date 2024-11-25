@@ -1,8 +1,7 @@
 package utils;
 
 import base.Base;
-import org.checkerframework.checker.index.qual.PolyUpperBound;
-import org.junit.jupiter.api.extension.ExtendWith;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,9 +10,6 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import javax.crypto.spec.OAEPParameterSpec;
-
-import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
 
