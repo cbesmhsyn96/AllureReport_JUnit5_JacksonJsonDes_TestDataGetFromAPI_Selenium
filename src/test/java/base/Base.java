@@ -9,13 +9,15 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import utils.GetDataFromApi;
+import utils.ManagerTestDatas;
 
 import java.io.File;
 import java.io.IOException;
 
 import static utils.AllureScreenshot.attachScreenshot;
 
-public class Base{
+public class Base extends ManagerTestDatas {
     public static WebDriver driver;
     public static WebDriverWait wait;
     protected static ChromeOptions options;

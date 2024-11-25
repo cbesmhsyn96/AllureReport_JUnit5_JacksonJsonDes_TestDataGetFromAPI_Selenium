@@ -1,10 +1,14 @@
 package tests;
 
 import io.qameta.allure.Step;
+import utils.GetDataFromApi;
+import utils.ManagerTestDatas;
 import utils.SeleniumHelperClass;
 
 import java.io.IOException;
+import java.util.List;
 
+import static utils.GetDataFromApi.*;
 import static utils.LocatorManager.*;
 
 public class StepsOfTests extends SeleniumHelperClass {
