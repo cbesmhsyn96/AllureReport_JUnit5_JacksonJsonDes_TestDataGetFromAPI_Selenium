@@ -3,15 +3,21 @@ AllureReport_JUnit5_JacksonJsonDes_TestDataGetFromAPI_Selenium projesinde;
 --> Locator dosyasından locator value su okuması ve işlemesi için Jackson deserialization,
 --> Test yazma için araç olarak JUnit5,
 --> Raporlamada detaylı bilgiler içeren bir arayüz sunan Allure report,
---> Testlerin gerçekleştirileceği tarayıcı olarak Chrome Driver kullanılmıştır.
+--> Testlerin gerçekleştirileceği tarayıcı olarak Chrome Driver,
+--> ManagerTestDatas classı test data kaynaklarına erişim için kullanılmıştır.
+--> Test data kaynağı belirli bir endpointe get isteği atılıp ve dönen response manipule edilerek sağlanmıştır.
 
 Projede test yazmada yaygın, okunabilirliği arttıran ve sonradan bakım yapıldığında kolaylık sağlayan,
 testleri sayfalara bölme modeli olan Page Object Model (POM) kullanılacak şekilde bir web sitesi seçilip login
 ve sigup sayfalarının testleri yazılacaktır.
 
-Test datası bir API' den çekilip response ta gerekli manipulasyon yapıldıktan sonra testlerin kullanabileceği
-hale getirilecektir.
 
-Kullanılacak api --> https://jsonplaceholder.typicode.com/posts GET request
+Detaylar
+------------
+-- https://Faker-API.proxy-production.allthingsdev.co/api/v2/creditCards endpointinden response çekilerek projenin
+kullanabileceği şekilde manipule edildi.
+-- ManagerTestDatas classı ile farklı kaynaklardan test datası dahil edileceği zaman data yönetiminin tek bir yerden
+olması sağlandı. Böylece Base classının extend ettiği ManagerTestDatas classı değişmeden ManagerTestDatas classı içindeki
+metotların parametre değerleri değiştirilerek yeni data kaynaklarından veri çekilebilecek.
 
 Takipte kalın...
