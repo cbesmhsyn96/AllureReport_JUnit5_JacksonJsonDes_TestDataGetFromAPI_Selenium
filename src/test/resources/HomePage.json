@@ -1,0 +1,17 @@
+[
+  {
+    "key": "PublisherDashboard_HoverText",
+    "value": "div[id='listYourAPI']",
+    "type": "css"
+  },
+  {
+    "key": "TeporaryPopUpCloseBtn",
+    "value": "div#__next>div:nth-child(3)>div>button",
+    "type": "css"
+  },
+  {
+    "key": "LoginSignUpButton",
+    "value": "div[id=\"__next\"] div.Profile div",
+    "type": "css"
+  }
+]
