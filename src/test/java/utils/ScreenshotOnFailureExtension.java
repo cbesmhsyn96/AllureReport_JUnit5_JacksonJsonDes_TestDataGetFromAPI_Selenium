@@ -10,8 +10,19 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
 public class ScreenshotOnFailureExtension extends Base implements AfterTestExecutionCallback{
-
     @Override
+    public void afterTestExecution(ExtensionContext extensionContext) throws Exception {
+            String testName = extensionContext.getTestMethod().map(method -> method.getName()).orElse("unknown");
+            String screenshotPath = AllureScreenshot.attachScreenshot(driver, testName);
+
+            try {
+                Allure.addAttachment("Screenshot", new FileInputStream(screenshotPath));
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
+    }
+
+    /*@Override
     public void afterTestExecution(ExtensionContext context) {
         boolean testFailed = context.getExecutionException().isPresent();
         if (testFailed) {
@@ -25,6 +36,6 @@ public class ScreenshotOnFailureExtension extends Base implements AfterTestExecu
                 e.printStackTrace();
             }
         }
-    }
+    }*/
 }
 

@@ -2,8 +2,10 @@ package utils;
 
 import base.Base;
 
+import io.qameta.allure.model.StepResult;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -14,12 +16,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.IOException;
 import java.time.Duration;
+import java.util.List;
+import java.util.Random;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static utils.LocatorManager.*;
 
 public class SeleniumHelperClass extends Base {
     LocatorManager locatorManager;
+    private static Random random;
     private static Actions actions;
     protected static void gotoUrl(String url){
         options = new ChromeOptions();
@@ -37,10 +42,30 @@ public class SeleniumHelperClass extends Base {
         findElement(key).click();
     }
 
+    protected static void isExistElementByKey(String key) throws IOException {
+        assertTrue(findElement(key).isDisplayed());
+    }
+
+    protected static void assertEqualCurrentUrl(String currentUrl){
+        assertEquals(currentUrl,driver.getCurrentUrl());
+    }
+
+    protected static void assertNotEqualCurrentUrl(String currentUrl){
+        assertNotEquals(currentUrl,driver.getCurrentUrl());
+    }
+
+    protected static void waitForElementWithTestByKey(String key, String text) throws IOException {
+        assertEquals(text,wait.until(ExpectedConditions.presenceOfElementLocated(getBy(key))).getText());
+    }
+
     protected static void ifExistClickElement(String key) throws IOException {
         if (findElement(key).isDisplayed()){
             findElement(key).click();
         }
+    }
+
+    protected static void switchToFrameByKey(String key) throws IOException {
+        driver.switchTo().frame(findElement(key));
     }
 
     protected static void scrollToExistElement(String key) throws IOException {
@@ -65,6 +90,12 @@ public class SeleniumHelperClass extends Base {
         Assertions.assertTrue(findElement(key).getAttribute(attributeField).contains(expectedValue));
     }
 
+    protected static void clickRandomElementFromElementsOnSameList(String elementListKey) throws IOException {
+        random = new Random();
+        List<WebElement> elementList = findElements(elementListKey);
+        elementList.get(random.nextInt(elementList.size())).click();
+    }
+
     protected static By getBy(String searchedKey) throws IOException {
         String value = getJsonNode(searchedKey).get("value").asText();
         String type = getJsonNode(searchedKey).get("type").asText();
@@ -79,6 +110,10 @@ public class SeleniumHelperClass extends Base {
 
     protected static WebElement findElement(String searchedKey) throws IOException {
         return wait.until(ExpectedConditions.presenceOfElementLocated(getBy(searchedKey)));
+    }
+
+    protected static List<WebElement> findElements(String listElementKey) throws IOException {
+        return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(getBy(listElementKey)));
     }
 
 }

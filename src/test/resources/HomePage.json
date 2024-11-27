@@ -13,5 +13,20 @@
     "key": "LoginSignUpButton",
     "value": "div[id=\"__next\"] div.Profile div",
     "type": "css"
+  },
+  {
+    "key": "BookDemo_NavbarBtn",
+    "value": "//div/nav/span[contains(text(),\"Book Demo\")]",
+    "type": "xpath"
+  },
+  {
+    "key": "BookDemoIframe",
+    "value": "iframe[src=\"https://outlook.office365.com/owa/calendar/allthingsdevProductDemoQASession@yellowbird.ai/bookings/\"]",
+    "type": "css"
+  },
+  {
+    "key": "BookDemoIframe_Text",
+    "value": "div#app img+h1",
+    "type": "css"
   }
 ]
