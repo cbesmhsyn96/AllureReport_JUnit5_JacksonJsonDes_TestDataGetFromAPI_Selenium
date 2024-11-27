@@ -20,7 +20,7 @@ public class TestHomePage extends StepsOfTests{
 
     /*
     Navbarların hepsi link yönlendirmesi yapmadığından hepsi tek tek ele alınıyor.
-    Her biri için değil ama Login ve logout durumda iken caseleri de var.
+    Her biri için değil ama Login ve logout durumda iken caseleri de var
      */
 
     @Order(2)
@@ -41,7 +41,6 @@ public class TestHomePage extends StepsOfTests{
         clickElementByKey("Search_NavbarBtn");
         waitAndAssertEqualElementText("Search:","SearchText");
     }
-
     @Order(4)
     @RepeatedTest(value = 5)
     @DisplayName("4. test Navbarda API Catalogue linkine tıklanması")
