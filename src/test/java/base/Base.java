@@ -15,7 +15,7 @@ import utils.ManagerTestDatas;
 import java.io.File;
 import java.io.IOException;
 
-import static utils.AllureScreenshot.attachScreenshot;
+import static utils.AllureScreenshot.*;
 
 public class Base extends ManagerTestDatas {
     public static WebDriver driver;
@@ -26,6 +26,7 @@ public class Base extends ManagerTestDatas {
     public void setUp(){
         System.setProperty("webdriver.chrome.driver","drivers/chromedriver");
     }
+
 
     @AfterEach
     public void tearDown(){

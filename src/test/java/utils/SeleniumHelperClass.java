@@ -24,6 +24,7 @@ import static utils.LocatorManager.*;
 
 public class SeleniumHelperClass extends Base {
     LocatorManager locatorManager;
+    AllureScreenshot allureScreenshot;
     private static Random random;
     private static Actions actions;
     protected static void gotoUrl(String url){
