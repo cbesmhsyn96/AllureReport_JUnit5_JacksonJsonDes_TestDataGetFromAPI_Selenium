@@ -28,5 +28,15 @@
     "key": "BookDemoIframe_Text",
     "value": "div#app img+h1",
     "type": "css"
+  },
+  {
+    "key": "Search_NavbarBtn",
+    "value": "div#__next nav:nth-child(2)",
+    "type": "css"
+  },
+  {
+    "key": "APICatalogue_NavbarBtn",
+    "value": "div#__next nav:nth-child(4)",
+    "type": "css"
   }
 ]

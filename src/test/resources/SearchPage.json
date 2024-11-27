@@ -1,0 +1,7 @@
+[
+  {
+    "key": "SearchText",
+    "value": "//h1[contains(text(),\"Search:\")]",
+    "type": "xpath"
+  }
+]
