@@ -12,6 +12,7 @@ public class TestHomePage extends StepsOfTests{
 
     @Order(1)
       //@RepeatedTest(value =  1)
+    @Test
     @DisplayName("1. Allthingsdev web sitesine url ile gidilmesi")
     void goWebSiteByUrlTest() throws IOException {
         goToUrl("https://www.allthingsdev.co/");
@@ -25,6 +26,7 @@ public class TestHomePage extends StepsOfTests{
 
     @Order(2)
       //@RepeatedTest(value =  1)
+    @Test
     @DisplayName("2. Navbarda Book Demo linkine tıklanması")
     void bookDemoNavbarLinkClick() throws IOException {
         goToUrl("https://www.allthingsdev.co/");
@@ -35,6 +37,7 @@ public class TestHomePage extends StepsOfTests{
 
     @Order(3)
       //@RepeatedTest(value =  1)
+    @Test
     @DisplayName("3. Navbarda Search linkine tıklanması")
     void searchNavbarLinkClick() throws IOException {
         goToUrl("https://www.allthingsdev.co/");
@@ -43,6 +46,7 @@ public class TestHomePage extends StepsOfTests{
     }
     @Order(4)
     //@RepeatedTest(value = 1)
+    @Test
     @DisplayName("4. Navbarda API Catalogue linkine tıklanması")
     void apiCatalogueNavbarLinkClick() throws IOException {
         goToUrl("https://www.allthingsdev.co/");
@@ -52,6 +56,7 @@ public class TestHomePage extends StepsOfTests{
 
     @Order(5)
     //@RepeatedTest(value = 1)
+    @Test
     @DisplayName("5. Navbarda Publisher Dashboard linkine tıklanması")
     void publisherDashbordNavbarLinkClick() throws IOException {
         goToUrl("https://www.allthingsdev.co/");
@@ -63,6 +68,7 @@ public class TestHomePage extends StepsOfTests{
 
     @Order(6)
     //@RepeatedTest(value = 1)
+    @Test
     @DisplayName("6. Navbarda Blog linkine tıklanması")
     void blogNavbarLinkClick() throws IOException {
         goToUrl("https://www.allthingsdev.co/");

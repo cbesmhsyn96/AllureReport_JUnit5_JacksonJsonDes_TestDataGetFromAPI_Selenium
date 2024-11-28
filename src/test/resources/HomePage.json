@@ -46,7 +46,7 @@
   },
   {
     "key": "Blog_NavbarBtn",
-    "value": "div#__next nav:nth-child(6)",
+    "value": "span[data-tooltip-id=\"blog\"]",
     "type": "css"
   }
 ]
