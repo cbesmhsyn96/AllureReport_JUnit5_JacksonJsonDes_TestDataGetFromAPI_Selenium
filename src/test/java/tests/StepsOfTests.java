@@ -93,4 +93,12 @@ public class StepsOfTests extends SeleniumHelperClass {
         takeScreenshot(driver);
     }
 
+    @Step("Wait for URL to be <text>")
+    void waitForURLtoBeTextOfURL(String text) throws IOException {
+        waitForURLtoBe(text);
+        takeScreenshot(driver);
+    }
+
+
+
 }

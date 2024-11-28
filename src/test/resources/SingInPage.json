@@ -1,0 +1,12 @@
+[
+  {
+    "key": "UnderTestOfWellcomeText",
+    "value": "div#__next>div:nth-child(1)>div:nth-child(2)>div>h2",
+    "type": "css"
+  },
+  {
+    "key": "EmailTextBox",
+    "value": "input[name=\"email\"]",
+    "type": "css"
+  }
+]

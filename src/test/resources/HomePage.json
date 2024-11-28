@@ -4,10 +4,6 @@
     "value": "div[id='listYourAPI']",
     "type": "css"
   },
-
-
-
-
   {
     "key": "TeporaryPopUpCloseBtn",
     "value": "div#__next>div:nth-child(3)>div>button",
@@ -41,6 +37,16 @@
   {
     "key": "APICatalogue_NavbarBtn",
     "value": "div#__next nav:nth-child(4)",
+    "type": "css"
+  },
+  {
+    "key": "PublisherDashboard_NavbarBtn",
+    "value": "div#__next nav:nth-child(5)",
+    "type": "css"
+  },
+  {
+    "key": "Blog_NavbarBtn",
+    "value": "div#__next nav:nth-child(6)",
     "type": "css"
   }
 ]

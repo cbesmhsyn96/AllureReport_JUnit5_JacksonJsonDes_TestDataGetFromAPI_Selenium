@@ -97,6 +97,15 @@ public class SeleniumHelperClass extends Base {
         elementList.get(random.nextInt(elementList.size())).click();
     }
 
+    protected static void waitForURLtoBe(String url){
+        wait.until(ExpectedConditions.urlToBe(url));
+    }
+
+    protected static void switchToWindowByIndex(int indexOfWindow){
+        Object[] windowHandles=driver.getWindowHandles().toArray();
+        driver.switchTo().window((String) windowHandles[indexOfWindow]);
+    }
+
     protected static By getBy(String searchedKey) throws IOException {
         String value = getJsonNode(searchedKey).get("value").asText();
         String type = getJsonNode(searchedKey).get("type").asText();
