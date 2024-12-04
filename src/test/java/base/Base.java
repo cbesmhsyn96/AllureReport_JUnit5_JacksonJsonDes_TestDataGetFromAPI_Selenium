@@ -4,6 +4,7 @@ import io.qameta.allure.Allure;
 import io.qameta.allure.AllureLifecycle;
 import io.qameta.allure.Attachment;
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -16,6 +17,7 @@ import java.io.File;
 import java.io.IOException;
 
 import static utils.AllureScreenshot.*;
+import static utils.EnvironmentUpdater.typeInfosToEnvironmentVeriablesProperties;
 
 public class Base extends ManagerTestDatas {
     public static WebDriver driver;
@@ -27,6 +29,10 @@ public class Base extends ManagerTestDatas {
         System.setProperty("webdriver.chrome.driver","drivers/chromedriver");
     }
 
+    @BeforeAll
+    public static void doSettingsForAllTests(){
+        typeInfosToEnvironmentVeriablesProperties();
+    }
 
     @AfterEach
     public void tearDown(){

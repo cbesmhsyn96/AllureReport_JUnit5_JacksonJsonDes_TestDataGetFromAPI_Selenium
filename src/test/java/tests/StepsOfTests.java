@@ -1,10 +1,11 @@
 package tests;
 
-import io.qameta.allure.Step;
+import io.qameta.allure.*;
 
 import utils.SeleniumHelperClass;
 
 import java.io.IOException;
+import java.io.InputStream;
 
 import static utils.AllureScreenshot.*;
 
@@ -98,7 +99,4 @@ public class StepsOfTests extends SeleniumHelperClass {
         waitForURLtoBe(text);
         takeScreenshot(driver);
     }
-
-
-
 }
