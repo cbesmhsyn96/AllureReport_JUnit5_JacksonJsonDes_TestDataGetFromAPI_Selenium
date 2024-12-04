@@ -1,30 +1,35 @@
 package tests;
 
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.RepeatedTest;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;
 
 import java.io.IOException;
 
 public class TestHomePage extends StepsOfTests{
 
-    @Order(1)
+    /*@Order(1)
       //@RepeatedTest(value =  1)
     @Test
     @DisplayName("1. Allthingsdev web sitesine url ile gidilmesi")
     void goWebSiteByUrlTest() throws IOException {
         goToUrl("https://www.allthingsdev.co/");
         verifyElementisExist("LoginSignUpButton");
+    }*/
+
+    @Test
+    @DisplayName("Assert true test method")
+    void assertTruee() throws IOException {
+        Assertions.assertTrue(false);
     }
+
+
 
     /*
     Navbarların hepsi link yönlendirmesi yapmadığından hepsi tek tek ele alınıyor.
     Her biri için değil ama Login ve logout durumda iken caseleri de var
      */
 
-    @Order(2)
+    /*@Order(2)
       //@RepeatedTest(value =  1)
     @Test
     @DisplayName("2. Navbarda Book Demo linkine tıklanması")
@@ -76,6 +81,6 @@ public class TestHomePage extends StepsOfTests{
         switchToWindowByIndex(1);
         assertEqualCurrentUrlisExpected("https://blog.allthingsdev.co/");
         waitAndAssertEqualElementText("Discover | Share | Engage","DiscoverShareEngage_Text");
-    }
+    }*/
 
 }

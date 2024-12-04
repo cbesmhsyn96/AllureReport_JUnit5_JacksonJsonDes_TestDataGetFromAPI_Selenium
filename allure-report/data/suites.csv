@@ -1,5 +1,2 @@
 "DESCRİPTİON","DURATİON İN MS","NAME","PARENT SUİTE","START TİME","STATUS","STOP TİME","SUB SUİTE","SUİTE","TEST CLASS","TEST METHOD"
-"","2","test2()","","Thu Nov 21 15:38:35 GMT+03:00 2024","failed","Thu Nov 21 15:38:35 GMT+03:00 2024","","tests.TestHomePage","tests.TestHomePage","test2"
-"","1","test3()","","Thu Nov 21 15:38:35 GMT+03:00 2024","passed","Thu Nov 21 15:38:35 GMT+03:00 2024","","tests.TestHomePage","tests.TestHomePage","test3"
-"","32","testAuthentication()","","Thu Nov 21 17:29:42 GMT+03:00 2024","passed","Thu Nov 21 17:29:42 GMT+03:00 2024","","tests.TestHomePage","tests.TestHomePage","testAuthentication"
-"","23","test1()","","Thu Nov 21 15:38:35 GMT+03:00 2024","failed","Thu Nov 21 15:38:35 GMT+03:00 2024","","tests.TestHomePage","tests.TestHomePage","test1"
+"","16","Assert true test method","","Wed Dec 04 12:57:53 GMT+03:00 2024","failed","Wed Dec 04 12:57:53 GMT+03:00 2024","","tests.TestHomePage","tests.TestHomePage","assertTruee"
