@@ -5,7 +5,7 @@ AllureReport_JUnit5_JacksonJsonDes_TestDataGetFromAPI_Selenium projesinde;
 --> Raporlamada detaylı bilgiler içeren bir önyüz sunan Allure report,
 --> Testlerin gerçekleştirileceği tarayıcı olarak Chrome Driver,
 --> ManagerTestDatas classı test data kaynaklarına erişim için kullanılmıştır.
---> Test data kaynağı belirli bir endpointe get isteği atılıp ve dönen response manipule edilerek sağlanmıştır.
+--> Test data kaynağı belirli bir endpointe get isteği atılıp dönen response manipule edilerek sağlanmıştır.
 
 Projede test yazmada yaygın, okunabilirliği arttıran ve sonradan bakım yapıldığında kolaylık sağlayan,
 testleri sayfalara bölme modeli olan Page Object Model (POM) kullanılacak şekilde, bir web sitesi seçilip login
