@@ -2,7 +2,7 @@ AllureReport_JUnit5_JacksonJsonDes_TestDataGetFromAPI_Selenium projesinde;
 --> Web UI test metotları için Selenium,
 --> Locator dosyasından locator value su okuması ve işlemesi için Jackson deserialization,
 --> Test yazma için araç olarak JUnit5,
---> Raporlamada detaylı bilgiler içeren bir arayüz sunan Allure report,
+--> Raporlamada detaylı bilgiler içeren bir önyüz sunan Allure report,
 --> Testlerin gerçekleştirileceği tarayıcı olarak Chrome Driver,
 --> ManagerTestDatas classı test data kaynaklarına erişim için kullanılmıştır.
 --> Test data kaynağı belirli bir endpointe get isteği atılıp ve dönen response manipule edilerek sağlanmıştır.
